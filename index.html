@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FLAT FREE - Selante Preventivo Industrial para Pneus de Frotas</title>
+  <meta name="description" content="Máxima eficiência e redução de paradas para sua frota com a tecnologia de selagem de pneus definitiva FLAT FREE."/>
+  
+  <!-- Tailwind CSS & Google Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-background": "#0b1c30",
+            "surface-dim": "#cbdbf5",
+            "surface-bright": "#f8f9ff",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e5eeff",
+            "surface-container-high": "#dce9ff",
+            "surface-container-highest": "#d3e4fe",
+            "background": "#f8f9ff",
+            "surface": "#ffffff",
+            "primary": "#000000",
+            "primary-container": "#131b2e",
+            "on-primary": "#ffffff",
+            "secondary": "#9d4300",
+            "secondary-container": "#fd761a",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#ffffff",
+            "tertiary-container": "#002113",
+            "on-tertiary-container": "#009668",
+            "outline": "#76777d",
+            "outline-variant": "#c6c6cd"
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col antialiased selection:bg-secondary-container selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="bg-surface sticky top-0 z-50 border-b border-outline-variant shadow-sm w-full">
+    <nav class="flex justify-between items-center w-full px-4 md:px-12 max-w-7xl mx-auto h-20">
+      <a href="#home" class="flex items-center gap-3 group">
+        <img src="assets/logo.png" alt="FLAT FREE Logo" class="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuCBaQAbR7Je3VC15n-xwZmfkeW3UeCji3wMzg7vsDlD3o2o1K7CbJAqJdlG5mbzA4WEDKevav5tslk_K2PIftflIi8fk4ov5-lNTL-hFCYwoL7sytdbPQuQOOU9DMxRBQFEg7StCnA2gU9lRMEp1WbZbHX0I_olijUmUIyMvLS-Tq3yVTdBoAQq0SEIAXyHjhKXiu6kTDgu36D7XwimTwZFjvHB5y95QTPjxK4lTptWBpP0V809dBX8LNPMsqFGQMXxNt4';"/>
+        <span class="font-extrabold text-2xl tracking-tight text-on-background hidden sm:inline-block">FLAT FREE</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-2">
+        <a href="#home" class="nav-link px-4 py-2 rounded-lg font-semibold text-sm transition-all text-on-surface-variant hover:text-primary hover:bg-surface-container-low">Início</a>
+        <a href="#beneficios" class="nav-link px-4 py-2 rounded-lg font-semibold text-sm transition-all text-on-surface-variant hover:text-primary hover:bg-surface-container-low">Benefícios & ROI</a>
+        <a href="#videos" class="nav-link px-4 py-2 rounded-lg font-semibold text-sm transition-all text-on-surface-variant hover:text-primary hover:bg-surface-container-low">Demonstrações</a>
+        <a href="#contato" class="nav-link px-4 py-2 rounded-lg font-semibold text-sm transition-all text-on-surface-variant hover:text-primary hover:bg-surface-container-low">Contato</a>
+      </div>
+
+      <!-- Action Button -->
+      <div class="hidden md:block">
+        <a href="#contato" class="bg-secondary-container hover:bg-secondary text-white font-bold text-sm px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all active:scale-95 duration-150 inline-flex items-center gap-2">
+          <span>Solicitar Orçamento</span>
+          <span class="material-symbols-outlined text-lg">arrow_forward</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-on-background hover:bg-surface-container-low rounded-lg transition-colors">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </nav>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-outline-variant bg-surface px-6 py-4 space-y-3">
+      <a href="#home" class="nav-link block px-4 py-2 rounded-lg font-semibold text-base text-on-surface-variant hover:bg-surface-container-low">Início</a>
+      <a href="#beneficios" class="nav-link block px-4 py-2 rounded-lg font-semibold text-base text-on-surface-variant hover:bg-surface-container-low">Benefícios & ROI</a>
+      <a href="#videos" class="nav-link block px-4 py-2 rounded-lg font-semibold text-base text-on-surface-variant hover:bg-surface-container-low">Demonstrações em Vídeo</a>
+      <a href="#contato" class="nav-link block px-4 py-2 rounded-lg font-semibold text-base text-on-surface-variant hover:bg-surface-container-low">Contato & Cotação</a>
+      <a href="#contato" class="block w-full text-center bg-secondary-container text-white font-bold px-6 py-3 rounded-lg mt-4 shadow">Solicitar Orçamento Agora</a>
+    </div>
+  </header>
+
+  <!-- MAIN SPA CONTENT VIEWS -->
+  <main class="flex-grow">
+
+    <!-- ==================== PAGE VIEW 1: HOME ==================== -->
+    <div id="view-home" class="page-view active">
+      
+      <!-- Hero Section -->
+      <section class="relative bg-surface-container-low border-b border-outline-variant overflow-hidden py-16 md:py-24">
+        <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center mix-blend-multiply" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmcXUcLQt3BA8rrD9HkOLkCtnJZZ_d5AMdOeH_crkzuXJOKf2lhGC3Ki-RUG2vPeEGHVADZGIgoHmuzXEwHYJo6tLwbvjW3XxhVDFQquSnQUyD59ATlXNIMVGK463CoCfoOTtDtIgfTJ2LFJ4lkWJllElPRQ29fOqoez57-4GS98jyEpn2B9XBrWjxsKDc73kXa4kQjAww4yZDlg5gf0FSw3BLcEqg6Y5eb9SS7rtwJGzDC-P29o97bQ')"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6 text-left">
+            <div class="inline-flex items-center gap-2 bg-surface border border-outline-variant px-4 py-1.5 rounded-full shadow-sm">
+              <span class="w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+              <span class="font-semibold text-xs text-secondary uppercase tracking-wider">Vedação Preventiva Industrial</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-on-background tracking-tight leading-tight">
+              Máxima Eficiência para sua Frota
+            </h1>
+            
+            <p class="text-lg md:text-xl text-on-surface-variant max-w-xl font-normal leading-relaxed">
+              Elimine paradas não programadas e aumente a produtividade da sua operação com a tecnologia líder em selagem preventiva de pneus pesados.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 pt-4">
+              <a href="#contato" class="bg-secondary-container hover:bg-secondary text-white font-bold text-base px-8 py-4 rounded-lg shadow-md hover:shadow-lg transition-all active:scale-95 duration-150 inline-flex items-center gap-2">
+                <span>Fale com um Especialista</span>
+                <span class="material-symbols-outlined text-xl">arrow_forward</span>
+              </a>
+              <a href="#beneficios" class="bg-surface hover:bg-surface-container-highest text-on-surface border border-outline font-bold text-base px-8 py-4 rounded-lg transition-all inline-flex items-center gap-2">
+                <span class="material-symbols-outlined">calculate</span>
+                <span>Simular Economia</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Image Showcase -->
+          <div class="relative flex justify-center">
+            <div class="absolute inset-0 bg-gradient-to-tr from-secondary-container/20 to-primary/10 rounded-2xl transform rotate-2 scale-105 -z-10"></div>
+            <div class="w-full aspect-4/3 bg-cover bg-center rounded-2xl shadow-2xl border border-outline-variant overflow-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxUAvXmzNokRtxjck-lDfSFlhW0mlCDerpZILsNXxnST3EqAKrOWOKsrTC_l73o5CxtSduDgcvXLyIxmRXPNzuDoME10C4EZZYqKCb6aCWyPebs7r3M1gYGRjJbGYhB5JxdpLXXy6zK7IFkW6wZqSmZ6PcSx8kzohKDvk0mekrJM4khIHDvy9BLzmYqwVdVzcMBAdNrwAYSj81_6UW4qUvvVhheO9WDWKJ2w_T0fNMm76siVWXmfH14w')">
+              <div class="h-full w-full bg-gradient-to-t from-on-background/80 via-transparent to-transparent flex items-end p-6">
+                <div class="text-white space-y-1">
+                  <span class="bg-secondary-container text-xs font-bold uppercase px-3 py-1 rounded">Proteção Total</span>
+                  <p class="font-bold text-lg">Pneus Off-Road & Rodoviários</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bento Grid Highlights -->
+      <section class="py-20 bg-background">
+        <div class="max-w-7xl mx-auto px-4 md:px-12">
+          <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-on-background tracking-tight">
+              Vantagens Competitivas para Gestores de Frota
+            </h2>
+            <p class="text-lg text-on-surface-variant">
+              A aplicação preventiva FLAT FREE reduz diretamente o Custo Total de Propriedade (TCO) em operações severas.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bento-card bg-surface rounded-xl p-8 border border-outline-variant shadow-sm relative overflow-hidden">
+              <div class="w-14 h-14 bg-surface-container-high rounded-xl flex items-center justify-center mb-6 text-primary">
+                <span class="material-symbols-outlined fill text-3xl">trending_down</span>
+              </div>
+              <h3 class="text-2xl font-bold text-on-background mb-3">Zero Tempo Perdido</h3>
+              <p class="text-on-surface-variant text-base leading-relaxed">
+                Elimina custos emergenciais com borracharia, socorro mecânico e paralisação imediata da produção no canteiro de obras.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bento-card bg-surface rounded-xl p-8 border border-outline-variant shadow-sm relative overflow-hidden">
+              <div class="w-14 h-14 bg-surface-container-high rounded-xl flex items-center justify-center mb-6 text-primary">
+                <span class="material-symbols-outlined fill text-3xl">published_with_changes</span>
+              </div>
+              <h3 class="text-2xl font-bold text-on-background mb-3">Maior Vida Útil do Pneu</h3>
+              <p class="text-on-surface-variant text-base leading-relaxed">
+                Preserva a carcaça interna contra desgastes irregulares e superaquecimento, permitindo maior número de recapagens.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bento-card bg-surface rounded-xl p-8 border border-outline-variant shadow-sm relative overflow-hidden">
+              <div class="w-14 h-14 bg-secondary-container/15 rounded-xl flex items-center justify-center mb-6 text-secondary">
+                <span class="material-symbols-outlined fill text-3xl">security</span>
+              </div>
+              <h3 class="text-2xl font-bold text-on-background mb-3">Segurança Operacional</h3>
+              <p class="text-on-surface-variant text-base leading-relaxed">
+                Evita estouros repentinos e acidentes causados pela perda rápida de pressão dos pneus em altas velocidades ou carga pesada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Stats Bar -->
+      <section class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-4xl md:text-5xl font-black text-secondary-container mb-2">92%</div>
+            <p class="text-sm md:text-base text-gray-300 font-medium">Redução em furos de até 6mm</p>
+          </div>
+          <div>
+            <div class="text-4xl md:text-5xl font-black text-secondary-container mb-2">35%</div>
+            <p class="text-sm md:text-base text-gray-300 font-medium">Aumento na durabilidade dos pneus</p>
+          </div>
+          <div>
+            <div class="text-4xl md:text-5xl font-black text-secondary-container mb-2">4%</div>
+            <p class="text-sm md:text-base text-gray-300 font-medium">Economia média em combustível</p>
+          </div>
+          <div>
+            <div class="text-4xl md:text-5xl font-black text-secondary-container mb-2">24/7</div>
+            <p class="text-sm md:text-base text-gray-300 font-medium">Proteção contínua e ativa</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="py-20 bg-surface border-t border-outline-variant">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-on-background">Pronto para blindar a produtividade da sua frota?</h2>
+          <p class="text-lg text-on-surface-variant max-w-2xl mx-auto">
+            Nossos consultores analisam o perfil da sua frota para indicar a quantidade ideal e projeção exata de economia.
+          </p>
+          <a href="#contato" class="inline-block bg-secondary-container hover:bg-secondary text-white font-bold text-lg px-10 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all active:scale-95">
+            Solicitar Análise Gratuita de Frota
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE VIEW 2: BENEFÍCIOS & ROI ==================== -->
+    <div id="view-beneficios" class="page-view">
+      
+      <!-- Section Header -->
+      <section class="bg-surface-container-low py-16 border-b border-outline-variant">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 text-center space-y-4">
+          <span class="inline-block px-3 py-1 bg-secondary-container/10 text-secondary font-bold text-xs uppercase tracking-wider rounded-full">Análise Técnica & ROI</span>
+          <h1 class="text-4xl md:text-5xl font-black text-on-background">Economia Comprovada & Calculadora B2B</h1>
+          <p class="text-lg text-on-surface-variant max-w-3xl mx-auto">
+            Descubra como a física por trás da estabilidade da pressão reduz o arrasto, corta gastos com diesel e projeta retorno financeiro real.
+          </p>
+        </div>
+      </section>
+
+      <!-- Technical Physics Breakdown -->
+      <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-surface border-l-4 border-primary rounded-r-xl p-8 border-y border-r border-outline-variant shadow-sm space-y-3">
+            <span class="text-xs font-bold uppercase text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Física Aplicada</span>
+            <h3 class="text-xl font-bold text-on-background">Estabilidade da Pressão</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              O selante veda porosidades microscópicas na borracha, impedindo variações graduais de libragem ao longo das semanas de trabalho.
+            </p>
+          </div>
+
+          <div class="bg-surface border-l-4 border-secondary-container rounded-r-xl p-8 border-y border-r border-outline-variant shadow-sm space-y-3">
+            <span class="text-xs font-bold uppercase text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Menor Resistência</span>
+            <h3 class="text-xl font-bold text-on-background">Redução do Arrasto</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Com os pneus devidamente calibrados de forma contínua, diminui-se a área de deformação sobre a pista, reduzindo a força necessária para rodar.
+            </p>
+          </div>
+
+          <div class="bg-surface border-l-4 border-green-600 rounded-r-xl p-8 border-y border-r border-outline-variant shadow-sm space-y-3">
+            <span class="text-xs font-bold uppercase text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Eficiência Energética</span>
+            <h3 class="text-xl font-bold text-on-background">Economia de Diesel</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Frotas pesadas economizam em média entre 3% e 5% no consumo anual de combustível devido à calibração otimizada sem despressurização.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FLEET ROI CALCULATOR -->
+      <section class="py-20 bg-surface border-y border-outline-variant">
+        <div class="max-w-6xl mx-auto px-4 md:px-12">
+          
+          <div class="bg-gradient-to-br from-primary-container to-on-background rounded-2xl p-8 md:p-12 text-white shadow-2xl space-y-8">
+            <div class="border-b border-gray-700 pb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+              <div>
+                <span class="bg-secondary-container text-white text-xs font-bold uppercase px-3 py-1 rounded">Simulador Interativo</span>
+                <h2 class="text-3xl font-extrabold mt-2">Calculadora de Economia para Frotas</h2>
+              </div>
+              <p class="text-gray-300 text-sm max-w-sm">Ajuste os controles para simular os ganhos da sua empresa em tempo real.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              
+              <!-- Input Sliders -->
+              <div class="space-y-6">
+                <!-- Fleet Size Slider -->
+                <div class="space-y-2">
+                  <div class="flex justify-between text-sm font-semibold">
+                    <span>Tamanho da Frota (Veículos):</span>
+                    <span id="calc-fleet-size-val" class="text-secondary-container font-bold text-lg">25</span>
+                  </div>
+                  <input id="calc-fleet-size" type="range" min="2" max="200" value="25" class="w-full h-3 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-secondary-container"/>
+                </div>
+
+                <!-- Punctures per Month Slider -->
+                <div class="space-y-2">
+                  <div class="flex justify-between text-sm font-semibold">
+                    <span>Média de Furos por Veículo / Mês:</span>
+                    <span id="calc-punctures-val" class="text-secondary-container font-bold text-lg">2</span>
+                  </div>
+                  <input id="calc-punctures" type="range" min="0.5" max="10" step="0.5" value="2" class="w-full h-3 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-secondary-container"/>
+                </div>
+
+                <!-- Downtime Cost Slider -->
+                <div class="space-y-2">
+                  <div class="flex justify-between text-sm font-semibold">
+                    <span>Custo Médio por Parada (Guincho / Hora Parada):</span>
+                    <span id="calc-downtime-val" class="text-secondary-container font-bold text-lg">R$ 500</span>
+                  </div>
+                  <input id="calc-downtime" type="range" min="150" max="2000" step="50" value="500" class="w-full h-3 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-secondary-container"/>
+                </div>
+              </div>
+
+              <!-- Live Output Results Box -->
+              <div class="bg-surface/10 backdrop-blur-md rounded-xl p-6 border border-white/10 space-y-6 text-center lg:text-left">
+                <div>
+                  <span class="text-xs uppercase tracking-wider text-gray-300 font-bold">Economia Estimada por Ano</span>
+                  <div id="res-savings-year" class="text-4xl md:text-5xl font-black text-secondary-container mt-1">R$ 135.000</div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4 border-t border-white/10 pt-4">
+                  <div>
+                    <span class="text-xs text-gray-300 block font-semibold">Horas Salvas de Operação</span>
+                    <span id="res-hours-saved" class="text-2xl font-bold text-white">1.380h</span>
+                  </div>
+                  <div>
+                    <span class="text-xs text-gray-300 block font-semibold">ROI Estimado</span>
+                    <span id="res-roi-pct" class="text-2xl font-bold text-emerald-400">380%</span>
+                  </div>
+                </div>
+
+                <!-- Progress visual bar -->
+                <div class="space-y-1">
+                  <div class="flex justify-between text-xs text-gray-300">
+                    <span>Redução de Custos de Manutenção</span>
+                    <span>92% Eficiência</span>
+                  </div>
+                  <div class="w-full h-3 bg-gray-800 rounded-full overflow-hidden">
+                    <div id="res-bar" class="h-full bg-gradient-to-r from-secondary-container to-emerald-400 w-3/4 transition-all duration-300"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center pt-4">
+              <a href="#contato" class="inline-block bg-secondary-container hover:bg-secondary text-white font-bold text-base px-8 py-3.5 rounded-lg shadow transition-all">
+                Receber Cotação Personalizada para esta Simulação
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE VIEW 3: VÍDEOS & DEMONSTRAÇÕES ==================== -->
+    <div id="view-videos" class="page-view">
+      
+      <section class="bg-surface-container-low py-16 border-b border-outline-variant">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 text-center space-y-4">
+          <span class="inline-block px-3 py-1 bg-secondary-container/10 text-secondary font-bold text-xs uppercase tracking-wider rounded-full">Vídeos em Ação</span>
+          <h1 class="text-4xl md:text-5xl font-black text-on-background">Demonstrações Práticas & Testes Extremos</h1>
+          <p class="text-lg text-on-surface-variant max-w-3xl mx-auto">
+            Veja a tecnologia FLAT FREE sendo colocada à prova em ambientes severos de mineração, agricultura e logística rodoviária.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 space-y-12">
+          
+          <!-- Category Chips -->
+          <div class="flex flex-wrap justify-center gap-3">
+            <button class="px-5 py-2.5 bg-primary text-white rounded-full font-bold text-xs uppercase tracking-wider shadow-sm">Todos os Vídeos</button>
+            <button class="px-5 py-2.5 bg-surface text-on-surface-variant border border-outline-variant rounded-full font-bold text-xs uppercase tracking-wider hover:bg-surface-container-low transition-colors">Testes de Furo</button>
+            <button class="px-5 py-2.5 bg-surface text-on-surface-variant border border-outline-variant rounded-full font-bold text-xs uppercase tracking-wider hover:bg-surface-container-low transition-colors">Passo a Passo Aplicação</button>
+            <button class="px-5 py-2.5 bg-surface text-on-surface-variant border border-outline-variant rounded-full font-bold text-xs uppercase tracking-wider hover:bg-surface-container-low transition-colors">Casos Reais</button>
+          </div>
+
+          <!-- Video Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Video 1 (Featured) -->
+            <div class="video-card lg:col-span-2 group cursor-pointer bg-surface rounded-xl overflow-hidden border border-outline-variant hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl" data-video="assets/demo1.mp4">
+              <div class="relative w-full aspect-video bg-surface-dim overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkt2rCHVQwzVS3pfIM0YQcwmEdS0Y1QjlLtpmCRnO09nskGcdwPp4_4uRWYIJYWJw9SxverV1Q92F_rHXREirHF8EwUDofcoyu_LcSA77PrZlJnkgAQFREeEpqK5-aBVJCsQDAzvxHyVxx6mE57snm7pJfPMJo_ZfrtzP8EHfTGW70GUkGH8VQowllyI53-jsBaNo2Xayj7gJwEGW2gek5s6U44FzO0zqpPxhjqQgszgb_UY5yDhAD6w')"></div>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+                  <div class="w-16 h-16 bg-secondary-container text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined fill text-4xl">play_arrow</span>
+                  </div>
+                </div>
+                <span class="absolute bottom-4 right-4 bg-black/80 text-white text-xs font-bold px-2.5 py-1 rounded">03:45</span>
+              </div>
+              <div class="p-6 space-y-2">
+                <span class="bg-secondary-container/10 text-secondary text-xs font-bold uppercase px-2.5 py-1 rounded">Destaque</span>
+                <h3 class="text-2xl font-bold text-on-background group-hover:text-secondary-container transition-colors">Operação Extrema: Pneus de Carga em Terreno Rígido</h3>
+                <p class="text-on-surface-variant text-sm">Demonstração de vedação instantânea após perfuração contínua por hastes metálicas de 6mm em condições reais de carga.</p>
+              </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-card group cursor-pointer bg-surface rounded-xl overflow-hidden border border-outline-variant hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl" data-video="assets/demo2.mp4">
+              <div class="relative w-full aspect-video bg-surface-dim overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDuAUw30L2Hv4EKgterr1bGwrmLMcwl3AuK9HHj_e8852AwMZX84Gj63uP2oBuhaam3iY48kCz_0pKj5Xh31IuGWR7ARvYqVi1zD-IcB1uWfq_HF7JNkoxhLOav97pCpgroSa_KVQx3yHhdjjpjvgDwC3yZs-ktIOAL2P-GCmf53ceZQNAjKbDoLCHZz-9ZPnkFtA8DPOpXVsZkE8Y8WCx7N6RfOX5yT56tQqxoVreWX7jbIAyFRQV2Vw')"></div>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+                  <div class="w-12 h-12 bg-white text-primary rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined fill text-2xl">play_arrow</span>
+                  </div>
+                </div>
+                <span class="absolute bottom-4 right-4 bg-black/80 text-white text-xs font-bold px-2.5 py-1 rounded">02:15</span>
+              </div>
+              <div class="p-5 space-y-2">
+                <span class="text-xs text-on-surface-variant font-bold uppercase">Passo a Passo</span>
+                <h3 class="text-lg font-bold text-on-background group-hover:text-secondary-container transition-colors">Como Aplicar o Selante via Válvula</h3>
+                <p class="text-on-surface-variant text-xs">Instalação rápida em menos de 10 minutos por pneu sem necessidade de desmontagem.</p>
+              </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-card group cursor-pointer bg-surface rounded-xl overflow-hidden border border-outline-variant hover:border-primary transition-all duration-300 shadow-sm hover:shadow-xl" data-video="assets/demo1.mp4">
+              <div class="relative w-full aspect-video bg-surface-dim overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTIWqzVaIvqGqN-R_OOuGRvaIrE2ziVYtNmsL8yIDaFXSoo_h4O37nf05yJEQ2dD0LZS5RD4cJq0SRBawdIWgu9j53SNcCUimRTosjRQOg0VDNDvSCqV5AZdw03K-sVHltBuQlUcGtAJcBNPggMBjy_Fm0UwwrjikqPhK-3OgyP2b5ZS9nuKAtK6EpwJqp_4kxn6UC_XmgsU_iBvcl_xe-tEWpvnQsUXOXUrEEY2zp2j_C300QEewHuQ')"></div>
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-colors">
+                  <div class="w-12 h-12 bg-white text-primary rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined fill text-2xl">play_arrow</span>
+                  </div>
+                </div>
+                <span class="absolute bottom-4 right-4 bg-black/80 text-white text-xs font-bold px-2.5 py-1 rounded">04:10</span>
+              </div>
+              <div class="p-5 space-y-2">
+                <span class="text-xs text-on-surface-variant font-bold uppercase">Depoimento</span>
+                <h3 class="text-lg font-bold text-on-background group-hover:text-secondary-container transition-colors">Relato da Gestão de Frota Agrícola</h3>
+                <p class="text-on-surface-variant text-xs">Como uma empresa reduziu 40% dos custos com borracharia durante a colheita.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==================== PAGE VIEW 4: CONTATO & COTAÇÃO ==================== -->
+    <div id="view-contato" class="page-view">
+      
+      <section class="bg-surface-container-low py-16 border-b border-outline-variant">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 text-center space-y-4">
+          <span class="inline-block px-3 py-1 bg-secondary-container/10 text-secondary font-bold text-xs uppercase tracking-wider rounded-full">Atendimento B2B</span>
+          <h1 class="text-4xl md:text-5xl font-black text-on-background">Fale com Nossos Especialistas</h1>
+          <p class="text-lg text-on-surface-variant max-w-3xl mx-auto">
+            Receba um plano customizado de vedação para sua frota e tire todas as dúvidas operacionais.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-16 bg-background">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
+          
+          <!-- Contact Info Cards -->
+          <div class="space-y-6">
+            <div class="bg-surface p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
+              <div class="p-3 bg-surface-container-low text-secondary rounded-lg">
+                <span class="material-symbols-outlined text-3xl">call</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-on-background">Atendimento Comercial</h4>
+                <p class="text-sm text-on-surface-variant mt-1">(11) 4003-8920</p>
+                <p class="text-xs text-gray-500">Segunda a Sexta, das 8h às 18h</p>
+              </div>
+            </div>
+
+            <div class="bg-surface p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
+              <div class="p-3 bg-emerald-50 text-emerald-600 rounded-lg">
+                <span class="material-symbols-outlined text-3xl">chat</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-on-background">WhatsApp Vendas Direct</h4>
+                <p class="text-sm text-on-surface-variant mt-1">(11) 98765-4321</p>
+                <p class="text-xs text-gray-500">Resposta em até 15 minutos</p>
+              </div>
+            </div>
+
+            <div class="bg-surface p-6 rounded-xl border border-outline-variant shadow-sm flex items-start gap-4">
+              <div class="p-3 bg-surface-container-low text-primary rounded-lg">
+                <span class="material-symbols-outlined text-3xl">mail</span>
+              </div>
+              <div>
+                <h4 class="font-bold text-on-background">E-mail Corporativo</h4>
+                <p class="text-sm text-on-surface-variant mt-1">comercial@flatfree.com.br</p>
+                <p class="text-xs text-gray-500">Para envio de editais e cotações</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Component -->
+          <div class="lg:col-span-2 bg-surface p-8 md:p-10 rounded-2xl border border-outline-variant shadow-lg space-y-6">
+            <div>
+              <h2 class="text-2xl font-bold text-on-background">Solicitar Proposta Comercial</h2>
+              <p class="text-sm text-on-surface-variant mt-1">Preencha os dados da sua empresa para receber a estimativa em PDF.</p>
+            </div>
+
+            <form id="quote-form" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="quote-name" class="block text-xs font-bold uppercase text-on-surface mb-2">Nome Completo *</label>
+                  <input id="quote-name" required type="text" placeholder="Ex: Carlos Silva" class="w-full px-4 py-3 bg-surface-bright border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary-container outline-none transition-all text-sm"/>
+                </div>
+                <div>
+                  <label for="quote-company" class="block text-xs font-bold uppercase text-on-surface mb-2">Nome da Empresa / Frota *</label>
+                  <input id="quote-company" required type="text" placeholder="Ex: TransLogística Brasil" class="w-full px-4 py-3 bg-surface-bright border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary-container outline-none transition-all text-sm"/>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="quote-email" class="block text-xs font-bold uppercase text-on-surface mb-2">E-mail Corporativo *</label>
+                  <input id="quote-email" required type="email" placeholder="carlos@empresa.com.br" class="w-full px-4 py-3 bg-surface-bright border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary-container outline-none transition-all text-sm"/>
+                </div>
+                <div>
+                  <label for="quote-fleet" class="block text-xs font-bold uppercase text-on-surface mb-2">Tamanho da Frota *</label>
+                  <select id="quote-fleet" required class="w-full px-4 py-3 bg-surface-bright border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary-container outline-none transition-all text-sm text-on-surface-variant">
+                    <option value="" disabled selected>Selecione a quantidade...</option>
+                    <option value="1-10">1 a 10 veículos</option>
+                    <option value="11-50">11 a 50 veículos</option>
+                    <option value="51-200">51 a 200 veículos</option>
+                    <option value="200+">Mais de 200 veículos</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="quote-msg" class="block text-xs font-bold uppercase text-on-surface mb-2">Mensagem ou Tipo de Operação</label>
+                <textarea id="quote-msg" rows="4" placeholder="Descreva os principais tipos de pneu ou desafios da sua operação..." class="w-full px-4 py-3 bg-surface-bright border border-outline-variant rounded-lg focus:ring-2 focus:ring-secondary-container outline-none transition-all text-sm resize-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-secondary-container hover:bg-secondary text-white font-bold text-base py-4 rounded-lg shadow-md transition-all active:scale-98">
+                Enviar Solicitação de Cotação
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- VIDEO MODAL -->
+  <div id="video-modal" class="modal-backdrop fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div class="bg-on-background rounded-2xl overflow-hidden max-w-4xl w-full shadow-2xl relative">
+      <button id="close-video-modal" class="absolute top-4 right-4 z-10 text-white bg-black/60 hover:bg-black p-2 rounded-full transition-colors">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+      <div class="aspect-video w-full bg-black">
+        <video id="modal-video" controls class="w-full h-full">
+          <source src="assets/demo1.mp4" type="video/mp4"/>
+          Seu navegador não suporta reprodução de vídeos.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUOTE SUCCESS MODAL -->
+  <div id="quote-success-modal" class="modal-backdrop fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div class="bg-surface rounded-2xl max-w-md w-full p-8 text-center space-y-6 shadow-2xl border border-outline-variant">
+      <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
+        <span class="material-symbols-outlined text-4xl">check_circle</span>
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold text-on-background">Solicitação Enviada!</h3>
+        <p class="text-sm text-on-surface-variant mt-2">
+          Obrigado, <span id="modal-client-name" class="font-bold text-on-background"></span>. Nossa equipe comercial entrará em contato em breve.
+        </p>
+      </div>
+      <div class="pt-2">
+        <button id="close-quote-modal" class="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-primary-container transition-colors">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white border-t border-gray-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 md:px-12 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="space-y-4">
+        <div class="flex items-center gap-2">
+          <img src="assets/logo.png" alt="FLAT FREE Logo" class="h-8 w-auto filter brightness-200" onerror="this.onerror=null; this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuCBaQAbR7Je3VC15n-xwZmfkeW3UeCji3wMzg7vsDlD3o2o1K7CbJAqJdlG5mbzA4WEDKevav5tslk_K2PIftflIi8fk4ov5-lNTL-hFCYwoL7sytdbPQuQOOU9DMxRBQFEg7StCnA2gU9lRMEp1WbZbHX0I_olijUmUIyMvLS-Tq3yVTdBoAQq0SEIAXyHjhKXiu6kTDgu36D7XwimTwZFjvHB5y95QTPjxK4lTptWBpP0V809dBX8LNPMsqFGQMXxNt4';"/>
+          <span class="font-extrabold text-xl tracking-tight">FLAT FREE</span>
+        </div>
+        <p class="text-xs text-gray-400 leading-relaxed">
+          Tecnologia em Vedação Industrial Preventiva para Pneus de Frotas Pesadas.
+        </p>
+      </div>
+
+      <div class="space-y-2 text-sm text-gray-300">
+        <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-3">Navegação</h4>
+        <p><a href="#home" class="hover:text-secondary-container transition-colors">Início</a></p>
+        <p><a href="#beneficios" class="hover:text-secondary-container transition-colors">Benefícios & ROI</a></p>
+        <p><a href="#videos" class="hover:text-secondary-container transition-colors">Demonstrações</a></p>
+        <p><a href="#contato" class="hover:text-secondary-container transition-colors">Contato</a></p>
+      </div>
+
+      <div class="space-y-2 text-sm text-gray-300">
+        <h4 class="font-bold text-white uppercase text-xs tracking-wider mb-3">Soluções</h4>
+        <p>Frotas Agrícolas & Tratores</p>
+        <p>Mineração & Linha Amarela</p>
+        <p>Transporte de Carga Rodoviário</p>
+        <p>Frotas Urbanas e Utilitários</p>
+      </div>
+
+      <div class="space-y-2 text-xs text-gray-400 flex flex-col justify-between">
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-2">Suporte Técnico</h4>
+          <p>suporte@flatfree.com.br</p>
+        </div>
+        <p class="pt-4 border-t border-gray-800">
+          © 2026 FLAT FREE. Todos os direitos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript App -->
+  <script src="app.js"></script>
+</body>
+</html>

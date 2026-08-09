@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FLAT FREE - Máxima Eficiência para sua Frota</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#0b1c30",
+                        "on-tertiary-fixed": "#002113",
+                        "surface-dim": "#cbdbf5",
+                        "tertiary-container": "#002113",
+                        "secondary-fixed": "#ffdbca",
+                        "surface-container-highest": "#d3e4fe",
+                        "surface-bright": "#f8f9ff",
+                        "primary-fixed": "#dae2fd",
+                        "surface-container": "#e5eeff",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "primary-fixed-dim": "#bec6e0",
+                        "primary-container": "#131b2e",
+                        "outline-variant": "#c6c6cd",
+                        "surface-container-low": "#eff4ff",
+                        "background": "#f8f9ff",
+                        "inverse-surface": "#213145",
+                        "inverse-primary": "#bec6e0",
+                        "on-secondary": "#ffffff",
+                        "on-primary-container": "#7c839b",
+                        "on-surface-variant": "#45464d",
+                        "on-primary-fixed": "#131b2e",
+                        "outline": "#76777d",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#783200",
+                        "tertiary-fixed": "#6ffbbe",
+                        "surface-container-high": "#dce9ff",
+                        "on-surface": "#0b1c30",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "on-secondary-container": "#5c2400",
+                        "surface-tint": "#565e74",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#ffb690",
+                        "on-tertiary-container": "#009668",
+                        "surface-variant": "#d3e4fe",
+                        "on-secondary-fixed": "#341100",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "primary": "#000000",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#9d4300",
+                        "secondary-container": "#fd761a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#eaf1ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "label-bold": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-lg min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-on-background full-width top-0 sticky z-50 border-b border-outline-variant dark:border-outline shadow-sm">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="flex items-center gap-4">
+<a class="font-headline-lg text-headline-lg font-black tracking-tighter text-on-surface dark:text-surface" href="#">
+                    FLAT FREE
+                </a>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary pb-1" href="#">Início</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-primary-container px-3 py-2 rounded-lg" href="#beneficios">Benefícios</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-primary-container px-3 py-2 rounded-lg" href="#videos">Vídeos</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors hover:bg-surface-container-low dark:hover:bg-primary-container px-3 py-2 rounded-lg" href="#contato">Contato</a>
+</div>
+<div class="hidden md:block">
+<a class="bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container px-6 py-3 rounded font-label-bold text-label-bold transition-all shadow-sm active:scale-95 duration-150 ease-in-out" href="#contato">
+                    Solicitar Orçamento
+                </a>
+</div>
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative bg-surface-container-low border-b border-outline-variant overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-30 mix-blend-multiply" data-alt="A massive, heavy-duty industrial dump truck operating in a rugged quarry environment under bright, clear daylight. The scene is shot from a low angle to emphasize the sheer scale and power of the vehicle, focusing on its massive, dirt-covered tires. The lighting is crisp and modern, creating a professional B2B industrial aesthetic with high contrast and deep shadows, emphasizing reliability and structural strength." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmcXUcLQt3BA8rrD9HkOLkCtnJZZ_d5AMdOeH_crkzuXJOKf2lhGC3Ki-RUG2vPeEGHVADZGIgoHmuzXEwHYJo6tLwbvjW3XxhVDFQquSnQUyD59ATlXNIMVGK463CoCfoOTtDtIgfTJ2LFJ4lkWJllElPRQ29fOqoez57-4GS98jyEpn2B9XBrWjxsKDc73kXa4kQjAww4yZDlg5gf0FSw3BLcEqg6Y5eb9SS7rtwJGzDC-P29o97bQ')"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-32 grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="space-y-8">
+<img alt="FLAT FREE Logo" class="w-48 md:w-64 mb-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBaQAbR7Je3VC15n-xwZmfkeW3UeCji3wMzg7vsDlD3o2o1K7CbJAqJdlG5mbzA4WEDKevav5tslk_K2PIftflIi8fk4ov5-lNTL-hFCYwoL7sytdbPQuQOOU9DMxRBQFEg7StCnA2gU9lRMEp1WbZbHX0I_olijUmUIyMvLS-Tq3yVTdBoAQq0SEIAXyHjhKXiu6kTDgu36D7XwimTwZFjvHB5y95QTPjxK4lTptWBpP0V809dBX8LNPMsqFGQMXxNt4"/>
+<h1 class="font-headline-xl text-headline-xl text-on-background">
+                        Máxima Eficiência para sua Frota
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+                        Reduza custos e aumente a produtividade com a tecnologia de selagem de pneus definitiva. Prevenção de paradas e aumento da vida útil em operações severas.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded font-label-bold text-label-bold transition-all shadow-sm hover:shadow-md active:scale-95 duration-150 ease-in-out inline-flex items-center gap-2" href="#contato">
+                            Fale com um Especialista
+                            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="bg-surface text-on-surface border border-outline px-8 py-4 rounded font-label-bold text-label-bold transition-all hover:bg-surface-container-highest inline-flex items-center gap-2" href="#beneficios">
+                            Entenda a Tecnologia
+                        </a>
+</div>
+</div>
+<div class="hidden md:flex justify-end relative">
+<!-- Abstract technical overlay to reinforce B2B feel -->
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-fixed to-transparent rounded-xl opacity-20 -z-10 transform translate-x-4 translate-y-4"></div>
+<div class="bg-cover bg-center w-full aspect-square max-w-md rounded-xl shadow-lg border border-outline-variant" data-alt="A close-up, high-detail macro shot of a heavy-duty off-road tire tread, demonstrating extreme durability. The lighting is studio-quality, highlighting the deep grooves and robust rubber texture against a clean, light slate background. A subtle, technical overlay graphic (like a grid or measurement lines) suggests precision engineering and advanced material science. Professional, corporate B2B style." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxUAvXmzNokRtxjck-lDfSFlhW0mlCDerpZILsNXxnST3EqAKrOWOKsrTC_l73o5CxtSduDgcvXLyIxmRXPNzuDoME10C4EZZYqKCb6aCWyPebs7r3M1gYGRjJbGYhB5JxdpLXXy6zK7IFkW6wZqSmZ6PcSx8kzohKDvk0mekrJM4khIHDvy9BLzmYqwVdVzcMBAdNrwAYSj81_6UW4qUvvVhheO9WDWKJ2w_T0fNMm76siVWXmfH14w')"></div>
+</div>
+</div>
+</section>
+<!-- Benefits Overview (Bento Grid Style) -->
+<section class="py-24 bg-background" id="beneficios">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Vantagens Competitivas</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        A proteção preventiva FLAT FREE atua diretamente na redução do custo operacional (TCO) de frotas industriais e comerciais.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Economy -->
+<div class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm hover:border-primary transition-all relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary"></div>
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined fill text-on-primary-fixed text-2xl">trending_down</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Economia Comprovada</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Elimina custos imprevistos com borracharia, guincho e, principalmente, o custo de máquina parada durante o expediente produtivo.
+                        </p>
+</div>
+<!-- Durability -->
+<div class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm hover:border-primary transition-all relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary"></div>
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined fill text-on-primary-fixed text-2xl">published_with_changes</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Durabilidade Estendida</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Mantém a calibração ideal por mais tempo, reduzindo o desgaste irregular da banda de rodagem e prolongando a vida útil da carcaça do pneu.
+                        </p>
+</div>
+<!-- Safety -->
+<div class="bg-surface rounded-xl p-8 border border-outline-variant shadow-sm hover:border-primary transition-all relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-2 h-full bg-primary"></div>
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center mb-6">
+<span class="material-symbols-outlined fill text-on-secondary-fixed-variant text-2xl">security</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Segurança Operacional</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Prevenção de acidentes causados por estouros ou perda repentina de pressão. Proteção contínua para o operador e para o equipamento.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- How it Works Section -->
+<section class="py-24 bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div class="order-2 lg:order-1 relative">
+<div class="aspect-video bg-surface rounded-xl border border-outline-variant shadow-sm overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="A technical, cross-section 3D render illustration showing the inside of an industrial tire. Bright green sealant liquid is actively flowing into a puncture hole caused by a large nail, sealing it instantly. The style is clean, modern, and highly technical, utilizing a corporate color palette of dark slate, pristine white, and safety orange/green accents to illustrate the scientific mechanics of the product." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQftq5JzZUqURuqj6Ie4Ykuah7LRhNUwDWSrEJBlBLDiTj91pXEDppBERzdg2nYP7R1c_IHSqA4OHYx8WHED50fygxnLOKC4ZDR0405v_EopgH6vq9fnWPkobIOi346mlIJ0m2-HduOw-8guOOpXqukAQreUzpmJuwMZnMkkgEpe1yQC_zJUslIs_R8riAJlLbSThR-TnpcX_dMAYE2IbMt5HWVN4tz-YjWTzcjc-SUAbynsE6iEeKRg')"></div>
+</div>
+<!-- Spec Tag -->
+<div class="absolute -bottom-4 -right-4 bg-tertiary-container text-on-tertiary-container px-4 py-2 rounded shadow-lg border border-outline-variant font-label-bold text-label-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                        Reparo Instantâneo até 6mm
+                    </div>
+</div>
+<div class="order-1 lg:order-2 space-y-6 lg:pl-12">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed rounded-full text-on-primary-fixed font-label-bold text-label-sm uppercase tracking-widest">
+                        Como Funciona
+                    </div>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Tecnologia de Ação Rápida</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        O FLAT FREE é um selante preventivo líquido, aplicado no interior do pneu através da válvula, antes que os furos ocorram.
+                    </p>
+<ul class="space-y-4 mt-8">
+<li class="flex items-start gap-4">
+<div class="w-8 h-8 rounded bg-surface border border-outline flex items-center justify-center flex-shrink-0 mt-1">
+<span class="font-label-bold text-primary">1</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-surface">Aplicação Preventiva</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">O produto é inserido e forma uma camada protetora homogênea na banda de rodagem interna pela força centrífuga.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-8 h-8 rounded bg-surface border border-outline flex items-center justify-center flex-shrink-0 mt-1">
+<span class="font-label-bold text-primary">2</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-surface">Perfuração</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Quando um objeto perfura o pneu, a pressão interna força as fibras e agentes selantes do FLAT FREE para dentro do furo.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<div class="w-8 h-8 rounded bg-surface border border-outline flex items-center justify-center flex-shrink-0 mt-1">
+<span class="font-label-bold text-primary">3</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-on-surface">Vedação Definitiva</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Um tampão flexível e permanente é formado instantaneamente, reparando furos de até 6mm sem perda de pressão perceptível.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-primary-container relative overflow-hidden" id="contato">
+<!-- Background Texture -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-3xl mx-auto px-margin-mobile md:px-margin-desktop text-center relative z-10">
+<h2 class="font-headline-xl text-headline-xl text-on-primary mb-6">Proteja sua Frota Hoje</h2>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mb-10">
+                    Solicite um orçamento personalizado para o volume da sua frota industrial ou comercial. Nossa equipe técnica está pronta para dimensionar a solução ideal.
+                </p>
+<form class="bg-surface rounded-xl p-8 shadow-lg border border-outline-variant text-left space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2" for="nome">Nome / Empresa</label>
+<input class="w-full bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary px-4 py-3 font-body-md text-body-md transition-colors" id="nome" placeholder="Razão Social" type="text"/>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2" for="frota">Tamanho da Frota (Veículos)</label>
+<select class="w-full bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary px-4 py-3 font-body-md text-body-md transition-colors" id="frota">
+<option>1 a 10</option>
+<option>11 a 50</option>
+<option>Mais de 50</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-2" for="email">E-mail Corporativo</label>
+<input class="w-full bg-surface border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary px-4 py-3 font-body-md text-body-md transition-colors" id="email" placeholder="contato@empresa.com.br" type="email"/>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container py-4 rounded font-label-bold text-label-bold transition-all shadow-sm hover:shadow-md active:scale-95 duration-150 flex justify-center items-center gap-2" type="submit">
+                        Solicitar Cotação
+                        <span class="material-symbols-outlined">send</span>
+</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-on-background dark:bg-on-primary-fixed full-width mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-16 max-w-container-max mx-auto">
+<div class="space-y-4 col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md font-black text-surface">
+                    FLAT FREE
+                </div>
+<p class="font-body-md text-body-md text-surface-variant dark:text-outline-variant max-w-sm">
+                    Tecnologia em Vedação Industrial. Soluções definitivas para a continuidade das suas operações.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-bold text-label-bold text-surface">Links Rápidos</h4>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-surface-variant dark:text-outline-variant hover:text-secondary-fixed transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-container w-fit rounded" href="#">Termos de Uso</a>
+<a class="font-body-md text-body-md text-surface-variant dark:text-outline-variant hover:text-secondary-fixed transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-container w-fit rounded" href="#">Política de Privacidade</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-bold text-label-bold text-surface">Contato</h4>
+<div class="flex flex-col space-y-2">
+<a class="font-body-md text-body-md text-surface-variant dark:text-outline-variant hover:text-secondary-fixed transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-container w-fit rounded" href="#">Suporte Técnico</a>
+<a class="font-body-md text-body-md text-surface-variant dark:text-outline-variant hover:text-secondary-fixed transition-colors focus:outline-none focus:ring-2 focus:ring-secondary-container w-fit rounded" href="#">Frota Segura</a>
+</div>
+</div>
+</div>
+<div class="border-t border-surface-tint/30 px-margin-mobile md:px-margin-desktop py-6 text-center">
+<p class="font-label-sm text-label-sm text-surface-variant dark:text-outline-variant">
+                © 2024 FLAT FREE - Tecnologia em Vedação Industrial. Todos os direitos reservados.
+            </p>
+</div>
+</footer>
+</body></html>
